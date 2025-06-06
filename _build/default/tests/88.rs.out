@@ -1,0 +1,2 @@
+File "88.rs", line 11, characters 1-85:
+Missing outlives constraint: lifetime 'b must outlive 'c

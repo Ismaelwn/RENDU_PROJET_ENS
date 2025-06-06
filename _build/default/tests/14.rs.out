@@ -1,0 +1,2 @@
+File "14.rs", line 1, characters 1-89:
+This struct is marked as being Copy, but its field x is not.

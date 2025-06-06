@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+cd "$(dirname "$0")"
+
+if [ ! -e ../minirust/minirust.exe ]
+then
+    echo \'runtest.sh\' should be run through \'dune runtest\'
+    exit 1
+fi
+
+for f in *.rs
+do
+    echo Running test $f...
+
+    ../minirust/minirust.exe "$f" 2> $f.out
+    ret=$?
+
+    rustc  --crate-type lib $f -o tmp 2> /dev/null
+    retrust=$?
+    rm -f tmp
+
+    if grep -q BAD "$f"
+    then
+        if [[ $ret != 1 ]]
+        then
+          echo Test $f: should return an error, but minirust returned code $ret.
+        fi
+
+        if [[ $retrust != 1 ]]
+        then
+          echo Test $f: should return an error, but *rustc* returned code $retrust.
+        fi
+    else
+        if [[ $ret != 0 ]]
+        then
+          echo Test $f: should not return an error, but minirust returned code $ret.
+        fi
+
+        if [[ $retrust != 0 ]]
+        then
+          echo Test $f: should not return an error, but *rustc* returned code $retrust.
+        fi
+    fi
+done

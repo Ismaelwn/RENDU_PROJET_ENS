@@ -1,0 +1,9 @@
+lib: [
+  "_build/install/default/lib/minirust/META"
+  "_build/install/default/lib/minirust/dune-package"
+  "_build/install/default/lib/minirust/opam"
+]
+doc: [
+  "_build/install/default/doc/minirust/LICENSE"
+  "_build/install/default/doc/minirust/LICENSE:Zone.Identifier"
+]

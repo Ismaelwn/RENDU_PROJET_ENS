@@ -1,0 +1,2 @@
+File "60.rs", line 5, characters 1-171:
+Missing outlives constraint: lifetime 'c must outlive 'd

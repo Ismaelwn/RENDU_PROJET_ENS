@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name minirust)
+(sections (lib .) (doc ../../doc/minirust))
+(files (lib (META dune-package opam)) (doc (LICENSE LICENSE:Zone.Identifier)))

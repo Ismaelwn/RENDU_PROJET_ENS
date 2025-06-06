@@ -1,0 +1,2 @@
+File "17.rs", line 2, characters 1-16:
+Lifetime parameter 'a is not used in this struct declaration.

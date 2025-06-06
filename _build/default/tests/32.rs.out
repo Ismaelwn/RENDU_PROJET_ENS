@@ -1,0 +1,2 @@
+File "32.rs", line 11, characters 11-17:
+Writing into a field of an uninitialized struct.

@@ -1,0 +1,2 @@
+File "79.rs", line 1, characters 29-125:
+When returning from this function, parameter `x` is still borrowed.

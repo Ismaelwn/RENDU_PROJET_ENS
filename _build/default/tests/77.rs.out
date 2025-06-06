@@ -1,0 +1,2 @@
+File "77.rs", line 8, characters 5-16:
+A borrow conflicts with the use of this place.

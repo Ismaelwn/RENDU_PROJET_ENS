@@ -1,0 +1,2 @@
+File "37.rs", line 20, characters 5-17:
+Use of a place which is not fully initialized at this point.

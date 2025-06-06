@@ -1,0 +1,2 @@
+File "69.rs", line 2, characters 5-25:
+A local declared here leaves its scope while still being borrowed.
